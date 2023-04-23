@@ -2,23 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="encriptador.css" />
 </head>
 
 
 <body>
-    <label for="enc">Encriptar: </label>
-    <input id="enc" placeholder="introduce palabra" />
-    <button type="button" id="btenc">Encrip</button>
-    <br />
-    <br />
-    <label for="des">Desencriptar: </label>
-    <input id="des" placeholder="introduce palabra" />
-    <button type="button" id="btdes">Desencrip</button>
-    <script src="encriptador.js"></script>
-</body>
+  <!-- contendor principal. -->
+  <div id="principal">
+    <!-- Contenido, dependiendo del dispositivo, de la parte izquierda o superior. -->
+    <div id="contIzq">
+      <div class="separadores" id="contImagen"><img src="logoAlura.png" alt="logo" id='logo'></div>
+      <textarea id="entrada" name="textEntrada" placeholder="Introduce tu texto aquí"></textarea>
+      <div class="separadores"></div>
 
+      <div id="botones">
+        <div id="grupoBEncLb">
+          <label for="btEnc" clase="lbaviso">Solo letras minusculas y sin acentos</label>
+          <input id="btEnc" type="button" name="botonEnc" value="Encriptar" />
+        </div>
+        <div id="grupobDesencLb">
+          <label for="btEnc" id="separadorBtn" clase="lbaviso">-</label>
+          <input id="btDesenc" type="button" name="botonDesenc" value="Desencriptar" />
+        </div>
+
+      </div>
+    </div>
+    <!-- Contenido, dependiendo del dispositivo, de la parte derecha o inferior. -->
+    <div id="contDer">
+      <textarea id="salida" disabled="true" name="textSalida" placeholder="Respuesta aquí"></textarea>
+      <img id="imagen" src="munieco.png" title="Muñeco">
+      <div id="parrafos">
+        <p id="p1">Ningún mensaje fue encontrado</p>
+        <p id="p2">Ingresa el texto que desees encriptar o desencriptar</p>
+      </div>
+      <input id="btCopiar" type="button" name="botonCopiar" value="Copiar" />
+    </div>
+  </div>
+  <script src="encriptador.js"></script>
+</body>
 </html>
