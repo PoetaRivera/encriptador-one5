@@ -9,39 +9,54 @@
   <link rel="stylesheet" href="encriptador.css" />
 </head>
 
-
 <body>
   <!-- contendor principal. -->
-  <div id="principal">
+  <main id="principal">
+
     <!-- Contenido, dependiendo del dispositivo, de la parte izquierda o superior. -->
-    <div id="contIzq">
+    <section id="contIzq">
+
       <div class="separadores" id="contImagen"><img src="logoAlura.png" alt="logo" id='logo'></div>
+
       <textarea id="entrada" name="textEntrada" placeholder="Introduce tu texto aquí"></textarea>
+
       <div class="separadores"></div>
 
-      <div id="botones">
-        <div id="grupoBEncLb">
+      <section id="botones">
+
+        <section id="grupoBEncLb">
           <label for="btEnc" clase="lbaviso">Solo letras minusculas y sin acentos</label>
           <input id="btEnc" type="button" name="botonEnc" value="Encriptar" />
-        </div>
-        <div id="grupobDesencLb">
+        </section>
+
+        <section id="grupobDesencLb">
           <label for="btEnc" id="separadorBtn" clase="lbaviso">-</label>
           <input id="btDesenc" type="button" name="botonDesenc" value="Desencriptar" />
-        </div>
+        </section>
 
-      </div>
-    </div>
+      </section>
+
+    </section>
+
     <!-- Contenido, dependiendo del dispositivo, de la parte derecha o inferior. -->
-    <div id="contDer">
+    <section id="contDer">
+
       <textarea id="salida" disabled="true" name="textSalida" placeholder="Respuesta aquí"></textarea>
+
       <img id="imagen" src="munieco.png" title="Muñeco">
-      <div id="parrafos">
+
+      <section id="parrafos">
         <p id="p1">Ningún mensaje fue encontrado</p>
         <p id="p2">Ingresa el texto que desees encriptar o desencriptar</p>
-      </div>
+      </section>
+
       <input id="btCopiar" type="button" name="botonCopiar" value="Copiar" />
-    </div>
-  </div>
+
+    </section>
+
+  </main>
+
   <script src="encriptador.js"></script>
 </body>
+
 </html>

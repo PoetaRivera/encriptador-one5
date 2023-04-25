@@ -1,21 +1,24 @@
 /*Definicion de las paletas de colores a usar*/
 :root {
-    --50:    #ede7f6;
-    --100:   #d1c4e9;
-    --A100:  #b388ff;
-    --A200:  #7C4DFF;
-    --A400:  #651FFF;
-    --A700:  #6200ea;
-    --50v:   #F1F8E9;
-    --100v:  #DCEDC8;
+    --50: #ede7f6;
+    --100: #d1c4e9;
+    --A100: #b388ff;
+    --A200: #7C4DFF;
+    --A400: #651FFF;
+    --A700: #6200ea;
+    --50v: #F1F8E9;
+    --100v: #DCEDC8;
     --A100v: #CCFF90;
     --A200v: #B2FF59;
     --A400v: #76FF03;
     --A700v: #64DD17;
-
 }
+
+
+
 /*Ajuste para laptop y desktop*/
 @media screen and (min-width: 961px) {
+   
     /*Contendor principal */
     #principal {
         display: flex;
@@ -24,10 +27,12 @@
         background-color: var(--50);
         height: 100vh;
         width: 100vw;
+      
     }
 
     /*Comienza region izquierda*/
     #contIzq {
+       
         margin-top: 1%;
         margin-bottom: 1%;
         display: flex;
@@ -37,32 +42,32 @@
         background-color: var(--100);
         width: 65vw;
         height: 98vh;
-        border:1px solid var(--A700);
+        border: 1px solid var(--A700);
         border-radius: 36px;
-        gap:5%
+        gap: 5%
     }
 
-    #contImagen{
-        margin-top:2%;
+    #contImagen {
+        margin-top: 2%;
         margin-left: 3%;
         align-self: flex-start;
     }
 
-    #logo{
+    #logo {
         width: 96px;
-        height:96px;
+        height: 96px;
     }
-   
+
 
     #entrada {
-        height:20%;
+        height: 20%;
         width: 70%;
         background-color: var(--100);
         text-align: left;
         font-size: 3vh;
         margin-top: 0%;
-        border:none;
-        
+        border: none;
+
     }
 
     #botones {
@@ -82,7 +87,7 @@
         border-radius: 24px;
         font: 3vh sans-serif;
         color: white;
-        
+
     }
 
     #btEnc {
@@ -92,17 +97,20 @@
     #btDesenc {
         background-color: var(--A100);
     }
-    #grupoBEncLb, #grupobDesencLb{
-        display:flex;
+
+    #grupoBEncLb,
+    #grupobDesencLb {
+        display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    #botones label{
+    #botones label {
         margin-left: 5%;
-        font-size:2vh;
+        font-size: 2vh;
     }
-    #separadorBtn{
+
+    #separadorBtn {
         height: 20%;
     }
 
@@ -121,65 +129,67 @@
         width: 30vw;
         height: 98vh;
         border-radius: 36px;
-        border:1px solid var(--A700v);
-        gap:0%;
+        border: 1px solid var(--A700v);
+        gap: 0%;
     }
 
-    #salida{
-        visibility: hidden;    
-        height:25%;
+    #salida {
+        visibility: hidden;
+        height: 25%;
         width: 70%;
-        border:none;
-        background-color:var(--100v);
+        border: none;
+        background-color: var(--100v);
         text-align: start;
         vertical-align: text-top;
         font-size: 2.5vh;
         margin-top: 10%;
-        
+
     }
 
-    #imagen{
-        display:block;
+    #imagen {
+        display: block;
         margin-top: 20vh;
     }
 
-    #p1{
+    #p1 {
         font-size: 3vh;
         text-align: center;
         font-weight: bold;
         margin-left: 5%;
         margin-right: 5%;
     }
-    #p2{
-        text-align: center; 
+
+    #p2 {
+        text-align: center;
         font-weight: lighter;
-        font-size:1.75vh ;  
+        font-size: 1.75vh;
     }
 
-    #btCopiar{
+    #btCopiar {
         visibility: hidden;
         width: 25vw;
         height: 7vh;
         border: 3px solid var(--A700v);
         border-radius: 24px;
         font: 3vh sans-serif;
-        color:black;
+        color: black;
         background-color: var(--A200v);
-        margin-top:30vh;
+        margin-top: 30vh;
         margin-bottom: 20px;
     }
 
-    #parrafos{
-    visibility: visible;
-    margin-top: 0px;    
+    #parrafos {
+        visibility: visible;
+        margin-top: 0px;
     }
-      
 
-    
-}   
+
+
+}
+
 /*Ajuste para tablet*/
 @media screen and (min-width: 601px) and (max-width: 960px) {
-    
+
     #principal {
         display: flex;
         flex-direction: column;
@@ -199,23 +209,23 @@
         background-color: var(--100);
         width: 98vw;
         height: 75vh;
-        border:1px solid var(--A700);
+        border: 1px solid var(--A700);
         border-radius: 36px;
     }
 
-    #contImagen{
+    #contImagen {
         margin-top: 2%;
         margin-left: 3%;
-        align-self:flex-start;
+        align-self: flex-start;
     }
 
-    #logo{
-    width: 72px;
-    height: 72px;
+    #logo {
+        width: 72px;
+        height: 72px;
     }
 
     #entrada {
-        height:20%;
+        height: 20%;
         width: 70%;
         border: none;
         background-color: var(--100);
@@ -250,23 +260,25 @@
     #btDesenc {
         background-color: var(--A100);
     }
-    #grupoBEncLb, #grupobDesencLb{
-        display:flex;
+
+    #grupoBEncLb,
+    #grupobDesencLb {
+        display: flex;
         flex-direction: column;
         gap: 0px;
     }
 
-    #separadorBtn{
+    #separadorBtn {
         color: var(--50);
     }
- 
-    #botones label{
+
+    #botones label {
         font-size: 1.2vh;
         font-weight: bold;
         margin-left: 5%;
         margin-bottom: 3%;
     }
-    
+
     #contDer {
         margin-right: 0.5%;
         margin-left: 1.5%;
@@ -280,58 +292,59 @@
         width: 98vw;
         height: 23vh;
         border-radius: 32px;
-        border:1px solid var(--A700v);
+        border: 1px solid var(--A700v);
     }
 
-    #salida{
-        visibility: hidden;   
-       
+    #salida {
+        visibility: hidden;
+
         width: 70%;
-        border:1px solid var(--A700v);
-        background-color:var(--100v);
+        border: 1px solid var(--A700v);
+        background-color: var(--100v);
         text-align: start;
         vertical-align: text-top;
         font-size: 2.5vh;
         margin-bottom: 6%;
     }
 
-    #imagen{
-        display:block;
+    #imagen {
+        display: block;
         margin-top: 10%;
     }
 
-    #p1{
+    #p1 {
         font-size: 3.5vh;
         text-align: center;
         font-weight: bold;
         margin-top: 0%;
     }
 
-    #p2{
-        text-align: center; 
+    #p2 {
+        text-align: center;
         font-weight: lighter;
         font-size: 1.75vh;
     }
 
-    #btCopiar{
+    #btCopiar {
         visibility: hidden;
         width: 70vw;
         height: 7vh;
         border: none;
         border-radius: 24px;
         font: 1.5em sans-serif;
-        color:black;
+        color: black;
         background-color: var(--A200v);
         margin-bottom: 2%;
     }
 
-    #parrafos{
-    visibility: visible;    
+    #parrafos {
+        visibility: visible;
     }
 }
+
 /*Ajuste para mobiles*/
 @media screen and (max-width: 600px) {
-    
+
     #principal {
         display: flex;
         flex-direction: column;
@@ -351,25 +364,25 @@
         background-color: var(--100);
         width: 98vw;
         height: 75vh;
-        border:1px solid var(--A700);
+        border: 1px solid var(--A700);
         border-radius: 26px;
     }
 
-    #contImagen{
+    #contImagen {
         margin-top: 2%;
         margin-left: 3%;
         width: 36px;
-        height:36px;
-        align-self:flex-start;
+        height: 36px;
+        align-self: flex-start;
     }
 
-    #logo{
+    #logo {
         width: 36px;
         height: 36px;
-        }
+    }
 
     #entrada {
-        height:60%;
+        height: 60%;
         width: 70%;
         border: none;
         outline: none;
@@ -405,23 +418,25 @@
     #btDesenc {
         background-color: var(--A100);
     }
-    #grupoBEncLb, #grupobDesencLb{
-        display:flex;
+
+    #grupoBEncLb,
+    #grupobDesencLb {
+        display: flex;
         flex-direction: column;
         gap: 0px;
     }
 
-    #separadorBtn{
+    #separadorBtn {
         color: var(--50);
     }
- 
-    #botones label{
+
+    #botones label {
         font-size: 1.7vh;
         font-weight: bold;
         margin-left: 5%;
         margin-bottom: 3%;
     }
-    
+
     #contDer {
         margin-right: 0.5%;
         margin-left: 1.5%;
@@ -435,59 +450,55 @@
         width: 98vw;
         height: 23vh;
         border-radius: 32px;
-        border:1px solid var(--A700v);
+        border: 1px solid var(--A700v);
     }
 
-    #salida{
-        visibility: hidden;   
+    #salida {
+        visibility: hidden;
         height: 0%;
         width: 70%;
-        border:1px solid var(--A700v);
-        background-color:var(--100v);
+        border: 1px solid var(--A700v);
+        background-color: var(--100v);
         text-align: start;
         vertical-align: text-top;
         font-size: 2.5vh;
         margin-bottom: 6%;
     }
 
-    #imagen{
-        display:block;
+    #imagen {
+        display: block;
         margin-top: 10%;
     }
 
-    #p1{
+    #p1 {
         font-size: 3.5vh;
         text-align: center;
         font-weight: bold;
         margin-top: 2%;
     }
 
-    #p2{
-        text-align: center; 
+    #p2 {
+        text-align: center;
         font-weight: lighter;
         font-size: 2.5vh;
-        margin-bottom: 0% ;
+        margin-bottom: 0%;
         margin-left: 5%;
         margin-right: 5%;
     }
 
-    #btCopiar{
+    #btCopiar {
         visibility: hidden;
         width: 70vw;
         height: 0vh;
         border: 3px solid var(--A700v);
         border-radius: 24px;
         font: 1.5em sans-serif;
-        color:black;
+        color: black;
         background-color: var(--A200v);
         margin-bottom: 4.5%;
     }
 
-    #parrafos{
-    visibility: visible; 
+    #parrafos {
+        visibility: visible;
     }
 }
-
-
-
- 

@@ -22,7 +22,7 @@ const encripDesencrip = [encriptar, desencriptar];
 //Creamos un arreglo que contiene las dos expresiones regulares a utilizar, las cuales contienen las claves para encriptar expresionBusqueda[0] ='[aeiou]' y desencriptar expresionBusqueda[1] ='(ai|enter|imes|ober|ufat)'. 
 const expresionBusqueda = ['[aeiou]', '(ai|enter|imes|ober|ufat)'];
 
-//funcion que realiza la operacion de encriptar o desencriptar. Recibe tres parametro "palabra" que es la palabra a encriptar/desencriptar,"selecExpresion" que selecciona si se encripta(0) o desencripta(1) y "objEncDesenc" que es el arreglo que contiene los dos objetos para encriptar o desencriptar.
+//funcion que realiza la operacion de encriptar o desencriptar. Recibe tres parametro "palabra" que es la palabra a encriptar/desencriptar,"selecExpresion" que selecciona si se encripta(0) o desencripta(1) y "objEncDesenc" que es el arreglo que contiene uno de los dos objetos para encriptar o desencriptar.
 const encriptDescript = (palabra, selecExpresion, objEncDesenc) => {
     //Seleccionamos por medio de "selecExpresion" si se encripta (selecExpresion=0) o se desencripta (selecExpresion=1).
     objEncDesenc = encripDesencrip[selecExpresion];
@@ -46,6 +46,7 @@ let botonEncrip = document.querySelector('#btEnc');
 let botonDesencript = document.querySelector('#btDesenc');
 let botonCopiar = document.querySelector('#btCopiar');
 let munieco = document.querySelector('#imagen')
+
 // Eleminamos la imagien del muñeco en caso la resolucion sea menor de 960.
 if (anchoPantalla <= 960) {
     munieco.remove();
